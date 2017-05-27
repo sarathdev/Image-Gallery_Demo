@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-PhotoFlickr_Demo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PhotoFlickr_DemoTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PhotoFlickr_DemoUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SQLite.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0294085F30AF61BDD60DBBF2F8ABED80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AF7C89C4D85E21A6E45E6A849572AE7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E57BFA6481F93117F2A316124E0FC08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3340A5735073FB3D44CA3AEC9A50ED55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B36543FBC71E90A805A7FCF9368EA2B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
