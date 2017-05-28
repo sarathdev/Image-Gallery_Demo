@@ -3,5 +3,5 @@ Image Galley App
 Used Cocoapods for dependncy management 
 
 Third party libraries used: 
-SDWebImage, '3.8'
+SDWebImage, '3.8' and
 SQLite.swift, ‘0.11.3’
