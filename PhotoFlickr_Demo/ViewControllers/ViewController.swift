@@ -25,6 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
         let dbHandler = DBHandlerClass.shared
         imagesArray.removeAllObjects()
         imagesArray.setArray(dbHandler.getImageTableData() as! [ImageTable])
+        self.collectionViewOutlet.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -52,25 +53,11 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         
-        let screensize : CGSize = self.view.bounds.size
-        //
-        //        let originalImage = imagesArray[indexPath.row]
-        var ImgSize : CGSize = CGSize(width: 0, height: 0) //= originalImage.size
-        //
-        //       ImgSize.width = (ImgSize.width < screensize.width ? ImgSize.width : screensize.width)
-        ImgSize.height = (screensize.width - 20) / 2
-        ImgSize.width = 120
-        
-        //        ImgSize.height += 4/3
-        //        ImgSize.width += 3/4
-        
-        //        ImgSize.height = ImgSize.height/15
-        //        ImgSize.width = ImgSize.width/15
-        
-        return ImgSize
-        
-        
-        //        return CGSize(width: 330, height: 150);
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        let ImgSize : CGSize = CGSize(width:(screenWidth/2)-15, height:(screenHeight/4)) //= originalImage.size
+        return ImgSize;
         
     }
     

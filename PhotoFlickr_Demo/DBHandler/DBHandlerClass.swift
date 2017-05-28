@@ -89,8 +89,10 @@ class DBHandlerClass: NSObject {
     func getImageTableData() -> NSMutableArray {
         let array : NSMutableArray! = NSMutableArray()
         do {
-                for imageData in try getDBConnection().prepare("SELECT * FROM ImageTable") {
-        
+            
+            for imageData in try getDBConnection().prepare("SELECT * FROM ImageTable order by click DESC")
+            {
+ 
                 let row : ImageTable = ImageTable()
                 row.id_value = imageData[0] as! Int64
                 row.url = imageData[1] as! String
